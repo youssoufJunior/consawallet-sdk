@@ -1,0 +1,17 @@
+{
+    "name": "vendor/cosna_wallet",
+    "description": "Online wallet to wallet payment",
+    "type": "library",
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "Vendor\\CosnaWallet\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "ISDG"
+        }
+    ],
+    "require": {}
+}
