@@ -1,17 +1,19 @@
 {
-    "name": "vendor/cosna_wallet",
-    "description": "Online wallet to wallet payment",
+    "name": "cosna/wallet",
+    "description": "Online payment solution for cosna wallet",
     "type": "library",
     "license": "MIT",
     "autoload": {
         "psr-4": {
-            "Vendor\\CosnaWallet\\": "src/"
+            "Cosna\\Wallet\\": "src/"
         }
     },
     "authors": [
         {
-            "name": "ISDG"
+            "name": "Ahmed Junior Randy",
+            "email": "randyahmedjunior@gmail.com"
         }
     ],
+    "minimum-stability": "dev",
     "require": {}
 }
