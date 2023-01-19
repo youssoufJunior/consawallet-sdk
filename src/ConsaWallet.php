@@ -2,7 +2,11 @@
 
 namespace cosnaWallet\PhpSdk;
 
-class Cosnawallet
+use Exception;
+use Illuminate\Support\Facades\Http;
+
+
+class ConsaWallet
 {
 
     public $header = [];
