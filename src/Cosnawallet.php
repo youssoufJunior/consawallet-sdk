@@ -11,11 +11,11 @@ class Cosnawallet
 
     }
 
-    public function setKeys(string $app_key, string $merchant_key)
+    public function setKeys(string $private_key, string $master_key)
     {
         $this->header = array(
-            'master-key' => $merchant_key,
-            'private-key' => $app_key
+            'master-key' => $master_key,
+            'private-key' => $private_key
         );
         return $this;
     }
@@ -41,7 +41,7 @@ class Cosnawallet
 
         if(!array_key_exists('callback_url', $array)) throw new Exception("Error: callback url not define");
 
-        $response = Http::withHeaders($this->header)->post('http://api.v2.cosna.test/v1/wallet/payment', $array);
+        $response = Http::withHeaders($this->header)->post('https://api.staging.payment.cosna-afrique.com/v1/wallet/payment', $array);
 
         return json_decode($response->body());
 
